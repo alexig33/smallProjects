@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaperSc</title>
+</head>
+<body>
+    <h3> Rock Paper Scissors</h3>
+    <button onclick="
+    const randomNum = Math.random();
+
+
+    let moveComp = '';
+    /*
+    make sure when you defined a variable define it with
+    let instead of const so you can assign it with
+    different values 
+
+    - using var is a bad choise cus var key doesn't follow the scope 
+    rules , using let and const is better to define the variables ;>
+    */
+    //these move will helps for us to access inside the scope only
+    //so now we can use the variables that is inside the if statement 
+
+
+    if(randomNum >= 0 && randomNum < 1/3){
+         moveComp = 'rock';
+
+    } else if(randomNum >= 1/3 && randomNum < 2/3) {
+         moveComp = 'paper';
+        
+    }
+    else if(randomNum > 2/3 && randomNum <1){
+            moveComp = 'scissors';
+        }
+
+        console.log(moveComp);
+
+        let result = '';
+
+
+        if (moveComp === 'rock'){
+
+            result = 'tie';
+
+
+
+        } else if (moveComp === 'paper'){
+
+            result = 'woah you won !';
+        }
+        else if(moveComp === 'scissors'){
+
+            result = 'lol you lost Bozo';
+        }
+
+        alert(`you picked rock, the rsult issss: ${result}`);
+    
+    "> Rock </button>
+
+
+
+    <button onclick="
+    
+        const randomNum = Math.random();
+
+
+        let moveComp = '';
+        
+
+        if(randomNum >= 0 && randomNum < 1/3){
+            moveComp = 'rock';
+
+        } else if(randomNum >= 1/3 && randomNum < 2/3) {
+            moveComp = 'paper';
+            
+        }
+        else if(randomNum > 2/3 && randomNum <1){
+                moveComp = 'scissors';
+            }
+
+            console.log(moveComp);
+
+            let result = '';
+
+
+            if (moveComp === 'rock'){
+
+                result = 'woah you won!';
+
+
+
+            } else if (moveComp === 'paper'){
+
+                result = 'that is a tie ';
+            }
+            else if(moveComp === 'scissors'){
+
+                result = 'lol you lost Bozo';
+            }
+
+            alert(`you picked paper, the rsult issss: ${result}`);
+    
+    
+    
+    
+    "> Paper</button>
+    <button onclick="
+    const randomNum = Math.random();
+
+
+    let moveComp = '';
+    /*
+    make sure when you defined a variable define it with
+    let instead of const so you can assign it with
+    different values 
+
+    - using var is a bad choise cus var key doesn't follow the scope 
+    rules , using let and const is better to define the variables ;>
+    */
+    //these move will helps for us to access inside the scope only
+    //so now we can use the variables that is inside the if statement 
+
+
+    if(randomNum >= 0 && randomNum < 1/3){
+         moveComp = 'rock';
+
+    } else if(randomNum >= 1/3 && randomNum < 2/3) {
+         moveComp = 'paper';
+        
+    }
+    else if(randomNum > 2/3 && randomNum <1){
+            moveComp = 'scissors';
+        }
+
+        console.log(moveComp);
+
+        let result = '';
+
+
+        if (moveComp === 'rock'){
+
+            result = 'lol you lost bozo';
+
+
+
+        } else if (moveComp === 'paper'){
+
+            result = 'woah you won! ';
+        }
+        else if(moveComp === 'scissors'){
+
+            result = 'that is a tie';
+        }
+
+        alert(`you picked scissors, the rsult issss: ${result}`);
+    
+    
+    
+    
+    
+    
+    "> Scissors</button>
+    <br>
+    <br>
+    <a> click here </a>
+    <script> 
+    
+
+    </script>
+</body>
+</html>
